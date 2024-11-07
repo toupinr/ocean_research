@@ -25,12 +25,12 @@ cbPalette2 <- c("#FFFFFF", "#009E73", "#FAEBD7", "#56B4E9", "#F0E442", "#0072B2"
     rm(db)
   }
   db = dbConnect(Postgres(),
-                 user = read.csv("admin/db_connection.csv")$user,
-                 password = read.csv("admin/db_connection.csv")$pw,
-                 host = read.csv("admin/db_connection.csv")$host,
-                 port = 5432,
-                 dbname = "postgres",
-                 options="-c search_path=projectdb_ofi")
+                 user = read.csv()$user,
+                 password = read.csv()$pw,
+                 host = read.csv()$host,
+                 port = ,
+                 dbname = "",
+                 options="")
 }
 
 ##Download data from QSS databases
