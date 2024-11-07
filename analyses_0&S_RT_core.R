@@ -16,12 +16,12 @@ library(svglite)
     rm(db)
   }
   db = dbConnect(Postgres(),
-                 user = read.csv("admin/db_connection.csv")$user,
-                 password = read.csv("admin/db_connection.csv")$pw,
-                 host = read.csv("admin/db_connection.csv")$host,
-                 port = 5432,
-                 dbname = "postgres",
-                 options="-c search_path=projectdb_ofi")
+                 user = read.csv()$user,
+                 password = read.csv()$pw,
+                 host = read.csv()$host,
+                 port = ,
+                 dbname = "",
+                 options="")
 }
 
 ##Retrieve data from database
